@@ -6,6 +6,9 @@ Atividades para fins de estudos sobre banco de dados (UC8).
 
 ![Modelo lógico do sistema de vendas](modelo-logico-vendas.png)
 
+## Exemplo 2 de Modelagem Lógica
+![Modelo lógico do sistema de filmes](modelo-logico-exercicio1.png)
+
 ## Sobre tipos de relacionamento.
 
 ### 1:1
