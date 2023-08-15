@@ -45,3 +45,25 @@ ALTER TABLE produtos
     -- Foreign Key: Chave-estrangeira (fabricante_id) que aponta para a chave-primária (id) de outra tabela
 ```
 
+### Exemplos de alterações estruturais na tabela
+
+### Renomear tabela
+
+```sql
+ALTER TABLE fabricantes RENAME TO fornecedores;
+```
+
+### Modificar colunas
+
+```sql
+ALTER TABLE produtos 
+    MODIFY COLUMN preco INT NOT NULL
+```
+
+### Modificar nome das colunas
+
+```sql
+ALTER TABLE fabricantes
+CHANGE nomeFabricante nome VARCHAR(45);
+```
+
