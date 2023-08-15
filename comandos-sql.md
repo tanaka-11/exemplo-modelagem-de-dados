@@ -20,3 +20,14 @@ CREATE TABLE fabricantes(
 ```sql
 DESC fabricantes;
 ```
+
+### Criar tabela de produtos
+```sql
+CREATE TABLE produtos (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nomeProduto VARCHAR(45) NOT NULL,
+    descricao TEXT(500) NULL,
+    preco DECIMAL(6,2) NOT NULL, 
+    fabricante_id INT NOT NULL
+);
+```
