@@ -67,3 +67,10 @@ ALTER TABLE fabricantes
 CHANGE nomeFabricante nome VARCHAR(45);
 ```
 
+### Adicionar colunas na tabela
+
+```sql
+ALTER TABLE produtos
+    ADD estoque INT NULL AFTER preco;
+```
+
