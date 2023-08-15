@@ -14,3 +14,9 @@ CREATE TABLE fabricantes(
     nomeFabricante VARCHAR(45) NOT NULL
 );
 ```
+
+### Visualizar detalhes estruturais da tabela
+
+```sql
+DESC fabricantes;
+```
