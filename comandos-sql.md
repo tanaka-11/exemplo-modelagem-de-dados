@@ -3,11 +3,13 @@
 ## Modelagem Física com comandos ***DDL***
 
 ### Criar banco de dados
+
 ```sql
 CREATE DATABASE vendas CHARACTER SET utf8mb4;
 ```
 
 ### Criar tabela de fabricantes
+
 ```sql
 CREATE TABLE fabricantes(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -22,6 +24,7 @@ DESC fabricantes;
 ```
 
 ### Criar tabela de produtos
+
 ```sql
 CREATE TABLE produtos (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -31,3 +34,14 @@ CREATE TABLE produtos (
     fabricante_id INT NOT NULL
 );
 ```
+
+### Criação do relacionamento entre as tabelas (Chave Estrangeira)
+
+```sql
+ALTER TABLE produtos
+    ADD CONSTRAINT fk_produtos_fabricantes
+    FOREIGN KEY (fabricante_id) REFERENCES fabricantes(id);
+    -- Constraint(Restrição): Indicando o nome do relacionamento .
+    -- Foreign Key: Chave-estrangeira (fabricante_id) que aponta para a chave-primária (id) de outra tabela
+```
+
