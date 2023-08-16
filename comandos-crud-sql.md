@@ -13,4 +13,11 @@
 
 ```sql
 INSERT INTO fabricantes(nomeFabricante) VALUES ('Asus');
+
+INSERT INTO fabricantes(nomeFabricante) VALUES ('Dell');
+INSERT INTO fabricantes(nomeFabricante) VALUES ('Apple');
+
+INSERT INTO fabricantes(nomeFabricante) VALUES ('LG'),('Samsung'),('Brastemp');
+
+INSERT INTO fabricantes(nomeFabricante) VALUES ('Positivo'),('Microsoft');
 ```
