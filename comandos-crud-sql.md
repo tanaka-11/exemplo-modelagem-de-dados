@@ -41,7 +41,33 @@ INSERT INTO produtos (
     'Tablet',
     'Tablet com a versão 14 do sistema operacional Android, 128gb de memória, tela de 10 polegadas, 8gb de RAM',
     1500.99,
-    10,
+    5,
     5 -- ID do fabricante "Samsung"
 );
+
+INSERT INTO produtos (
+    nomeProduto, descricao, preco, estoque, fabricante_id
+) VALUES (
+    'Geladeira',
+    'Refrigerador frost-free com acesso à internet',
+    5000,
+    12,
+    6
+), 
+(
+    'Iphone 14 Pro Max',
+    'Smartphone Apple',
+    12666.70,
+    3,
+    3
+), 
+(
+    'Ipad Mini',
+    'Tablet Apple',
+    4999.99,
+    5,
+    3
+);
+
+
 ```
