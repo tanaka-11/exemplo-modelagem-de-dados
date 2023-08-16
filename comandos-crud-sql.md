@@ -7,4 +7,6 @@
 - U -> UPDATE (Atualizar dados usando comando `UPDATE`)
 - D -> DELETE (Excluir dados usando comando `DELETE`)
 
+## INSERT 
+
 
