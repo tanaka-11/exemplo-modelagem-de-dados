@@ -74,3 +74,10 @@ ALTER TABLE produtos
     ADD estoque INT NULL AFTER preco;
 ```
 
+### Apagar um banco de dados
+
+```sql
+DROP DATABASE nomedobanco;
+```
+
+
