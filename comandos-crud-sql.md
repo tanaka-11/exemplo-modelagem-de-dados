@@ -25,13 +25,23 @@ INSERT INTO fabricantes(nomeFabricante) VALUES ('Positivo'),('Microsoft');
 ### Produtos
 
 ```sql
-INSERT INTO produtos(
-    nomeProduto, descricao, preco, estoque, fabricante_id) 
-    VALUES(
-        'Ultrabook',
-        'Equipamento de última de geração cheio de recursos, com processador Intel Core I9.',
-        3500,
-        7,
-        2 -- ID do fabricante "Dell"
-    );
+INSERT INTO produtos (
+    nomeProduto, descricao, preco, estoque, fabricante_id
+) VALUES (
+    'Ultrabook',
+    'Equipamento de última de geração cheio derecursos, com processador Intel Core I9.',
+    3500,
+    7,
+    2 -- ID do fabricante "Dell"
+);
+
+INSERT INTO produtos (
+    nomeProduto, descricao, preco, estoque, fabricante_id
+) VALUES (
+    'Tablet',
+    'Tablet com a versão 14 do sistema operacional Android, 128gb de memória, tela de 10 polegadas, 8gb de RAM',
+    1500.99,
+    10,
+    5 -- ID do fabricante "Samsung"
+);
 ```
