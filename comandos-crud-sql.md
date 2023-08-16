@@ -9,4 +9,8 @@
 
 ## INSERT 
 
+### Fabricantes
 
+```sql
+INSERT INTO fabricantes(nomeFabricante) VALUES ('Asus');
+```
