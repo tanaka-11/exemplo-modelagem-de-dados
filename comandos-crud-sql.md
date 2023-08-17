@@ -161,6 +161,7 @@ UPDATE produtos SET estoque = 20 WHERE fabricante_id IN (3,5)
 ```sql
 DELETE FROM fabricantes WHERE id = 1;
 
--- A query abaixo NÃO FUNCIONA devido à restrição de chave estrangeira/relacionamento, ou seja, existem produtos associados ao fabricante 3.
+-- A query abaixo NÃO FUNCIONA devido à restrição de chave estrangeira/relacionamento,
+-- ou seja, existem produtos associados ao fabricante 3.
 -- DELETE FROM fabricantes WHERE id = 3;
 ```
