@@ -154,3 +154,9 @@ UPDATE produtos SET estoque = 20 WHERE fabricante_id = 3 OR fabricante_id = 5;
 
 UPDATE produtos SET estoque = 20 WHERE fabricante_id IN (3,5)
 ```
+
+## DELETE
+
+```sql
+DELETE FROM fabricantes WHERE id = 1;
+```
