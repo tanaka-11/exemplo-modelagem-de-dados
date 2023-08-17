@@ -145,6 +145,8 @@ SELECT COUNT(id) as "Qtd. de Produtos" FROM produtos;
 
 -- Exemplo de contagem com a flag (DISTINCT):
 SELECT COUNT(DISTINCT fabricante_id) as "Qtd. de Fabricantes com produtos" FROM produtos;
+
+-- Em resumo a flag (DISTINCT) é utilizada para evitar duplicidade na contagem de registros
 ```
 
 ---
