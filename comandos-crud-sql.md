@@ -149,4 +149,8 @@ UPDATE fabricantes SET nomeFabricante = 'Asus do Brasil' WHERE id = 1; -- JAMAIS
 
 UPDATE produtos SET preco = '6549,75' WHERE id = 4;
 --- Utilizar o ID por ser único e não ter mais produtos iguais.
+
+UPDATE produtos SET estoque = 20 WHERE fabricante_id = 3 OR fabricante_id = 5;
+
+UPDATE produtos SET estoque = 20 WHERE fabricante_id IN (3,5)
 ```
