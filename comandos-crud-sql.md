@@ -197,3 +197,20 @@ DELETE FROM fabricantes WHERE id = 1;
 -- ou seja, existem produtos associados ao fabricante 3.
 -- DELETE FROM fabricantes WHERE id = 3;
 ```
+
+---
+
+### Operações e funções de agregação
+ 
+```sql
+-- Exemplo de soma (SUM):
+SELECT SUM(preco) FROM produtos;
+
+-- Exemplo de apelidos (as):
+SELECT nomeProduto as Produto, preco as "Preço" FROM produtos;
+
+-- Exemplo de média (AVG):
+SELECT AVG(preco) as "Média dos Preços" FROM produtos;
+```
+
+
