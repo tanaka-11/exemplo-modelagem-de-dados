@@ -135,6 +135,15 @@ SELECT nomeProduto, preco, descricao FROM produtos WHERE fabricante_id != 8;
 ```
 
 Exemplo 3 - Usando função IN
+
 ```sql
 SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id NOT IN (3,5);
+```
+
+---
+
+## UPDATE
+
+```sql
+UPDATE fabricantes SET nomeFabricante = 'Asus do Brasil' WHERE id = 1; -- JAMAIS FAZER UM UPDATE SEM O WHERE!
 ```
