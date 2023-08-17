@@ -113,6 +113,18 @@ SELECT nomeProduto, preco FROM produtos WHERE estoque = 20 ORDER BY nomeProduto;
 
 ---
 
+### Busca de dados (LIKE)
+
+```sql
+--  o símbolo "%" é usado como um caractere curinga para a busca de um texto no banco de dados.
+
+SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%sistema%';
+
+SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%tela%' OR nomeProduto like '%apple%';
+```
+
+---
+
 ### Operações e funções de agregação
  
 ```sql
@@ -129,19 +141,10 @@ SELECT AVG(preco) as "Média dos Preços" FROM produtos;
 SELECT ROUND(AVG(preco), 2) as "Média dos Preços" FROM produtos;
 
 -- Exemplo de contagem (COUNT):
-SELECT COUNT(id) as "Qtd. de Produtos" from produtos;
-```
+SELECT COUNT(id) as "Qtd. de Produtos" FROM produtos;
 
----
-
-### Busca de dados (LIKE)
-
-```sql
---  o símbolo "%" é usado como um caractere curinga para a busca de um texto no banco de dados.
-
-SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%sistema%';
-
-SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%tela%' OR nomeProduto like '%apple%';
+-- Exemplo de contagem com a flag (DISTINCT):
+SELECT COUNT(DISTINCT fabricante_id) as "Qtd. de Fabricantes com produtos" FROM produtos;
 ```
 
 ---
