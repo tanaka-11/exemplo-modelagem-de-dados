@@ -113,6 +113,24 @@ SELECT nomeProduto, preco FROM produtos WHERE estoque = 20 ORDER BY nomeProduto;
 
 ---
 
+### Operações e funções de agregação
+ 
+```sql
+-- Exemplo de soma (SUM):
+SELECT SUM(preco) FROM produtos;
+
+-- Exemplo de apelidos (as):
+SELECT nomeProduto as Produto, preco as "Preço" FROM produtos;
+
+-- Exemplo de média
+SELECT AVG(preco) as "Média dos Preços" FROM produtos;
+
+-- Exemplo de média com arredondamento (ROUND) passando a "," e a quantidade de casas decimais dentro da função:
+SELECT ROUND(AVG(preco), 2) as "Média dos Preços" FROM produtos;
+```
+
+---
+
 ### Busca de dados (LIKE)
 
 ```sql
@@ -200,17 +218,6 @@ DELETE FROM fabricantes WHERE id = 1;
 
 ---
 
-### Operações e funções de agregação
- 
-```sql
--- Exemplo de soma (SUM):
-SELECT SUM(preco) FROM produtos;
 
--- Exemplo de apelidos (as):
-SELECT nomeProduto as Produto, preco as "Preço" FROM produtos;
-
--- Exemplo de média (AVG):
-SELECT AVG(preco) as "Média dos Preços" FROM produtos;
-```
 
 
