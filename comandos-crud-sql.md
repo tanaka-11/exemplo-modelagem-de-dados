@@ -122,11 +122,14 @@ SELECT SUM(preco) FROM produtos;
 -- Exemplo de apelidos (as):
 SELECT nomeProduto as Produto, preco as "Preço" FROM produtos;
 
--- Exemplo de média
+-- Exemplo de média (AVG):
 SELECT AVG(preco) as "Média dos Preços" FROM produtos;
 
 -- Exemplo de média com arredondamento (ROUND) passando a "," e a quantidade de casas decimais dentro da função:
 SELECT ROUND(AVG(preco), 2) as "Média dos Preços" FROM produtos;
+
+-- Exemplo de contagem (COUNT):
+SELECT COUNT(id) as "Qtd. de Produtos" from produtos;
 ```
 
 ---
