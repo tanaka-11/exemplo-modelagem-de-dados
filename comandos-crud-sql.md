@@ -146,4 +146,7 @@ SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id NOT IN (3,5);
 
 ```sql
 UPDATE fabricantes SET nomeFabricante = 'Asus do Brasil' WHERE id = 1; -- JAMAIS FAZER UM UPDATE SEM O WHERE!
+
+UPDATE produtos SET preco = '6549,75' WHERE id = 4;
+--- Utilizar o ID por ser único e não ter mais produtos iguais.
 ```
