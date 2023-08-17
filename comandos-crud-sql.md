@@ -9,7 +9,9 @@
 
 ## INSERT 
 
-### Fabricantes
+### Adicionando dados
+
+#### Fabricantes
 
 ```sql
 INSERT INTO fabricantes(nomeFabricante) VALUES ('Asus');
@@ -22,7 +24,7 @@ INSERT INTO fabricantes(nomeFabricante) VALUES ('LG'),('Samsung'),('Brastemp');
 INSERT INTO fabricantes(nomeFabricante) VALUES ('Positivo'),('Microsoft');
 ```
 
-### Produtos
+#### Produtos
 
 ```sql
 INSERT INTO produtos (
@@ -69,5 +71,32 @@ INSERT INTO produtos (
     3
 );
 
+```
 
+---
+
+## SELECT
+
+### Consultas/Querys de dados
+
+```sql
+SELECT * FROM produtos;
+
+SELECT nomeProduto, preco FROM produtos;
+
+SELECT preco, nomeProduto FROM produtos;
+
+SELECT nomeProduto, preco, estoque FROM produtos WHERE preco < 5000;
+
+SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id = 3;
+```
+
+---
+
+### Operadores Lógicos
+
+```sql
+SELECT nomeProduto, preco FROM produtos WHERE preco >= 2000 AND preco <= 6000;
+
+SELECT nomeProduto, preco FROM produtos WHERE preco > 5000 AND preco <= 6000;
 ```
