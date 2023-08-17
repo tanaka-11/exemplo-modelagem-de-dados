@@ -143,10 +143,10 @@ SELECT ROUND(AVG(preco), 2) as "Média dos Preços" FROM produtos;
 -- Exemplo de contagem (COUNT):
 SELECT COUNT(id) as "Qtd. de Produtos" FROM produtos;
 
--- Exemplo de contagem com a flag (DISTINCT):
+-- Exemplo de contagem com a flag (DISTINCT) 
+-- em resumo a flag (DISTINCT) é utilizada para evitar -- duplicidade na contagem de registros:
 SELECT COUNT(DISTINCT fabricante_id) as "Qtd. de Fabricantes com produtos" FROM produtos;
 
--- Em resumo a flag (DISTINCT) é utilizada para evitar duplicidade na contagem de registros
 ```
 
 ---
@@ -161,6 +161,8 @@ SELECT nomeProduto, preco FROM produtos WHERE preco >= 2000 AND preco <= 6000;
 SELECT nomeProduto, preco FROM produtos WHERE preco > 5000 AND preco <= 6000;
 
 ```
+
+---
 
 #### OU (OR)
 
@@ -214,6 +216,8 @@ UPDATE produtos SET estoque = 20 WHERE fabricante_id = 3 OR fabricante_id = 5;
 UPDATE produtos SET estoque = 20 WHERE fabricante_id IN (3,5)
 ```
 
+---
+
 ## DELETE
 
 ```sql
@@ -225,6 +229,18 @@ DELETE FROM fabricantes WHERE id = 1;
 ```
 
 ---
+
+### Operações matemáticas:
+```sql
+SELECT nomeProduto, preco, estoque, (preco * estoque) as Total FROM produtos;
+```
+
+### Segmentação/Agrupamento de resultados(GROUP BY):
+
+```sql
+SELECT fabricante_id, SUM(preco) FROM produtos GROUP BY fabricante_id;
+
+```
 
 
 
