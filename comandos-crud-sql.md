@@ -113,6 +113,18 @@ SELECT nomeProduto, preco FROM produtos WHERE estoque = 20 ORDER BY nomeProduto;
 
 ---
 
+### Busca de dados (LIKE)
+
+```sql
+--  o símbolo "%" é usado como um caractere curinga para a busca no banco de dados.
+
+SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%sistema%';
+
+SELECT nomeProduto, descricao FROM produtos WHERE descricao LIKE '%tela%' or nomeProduto like '%apple%';
+```
+
+---
+
 ### Operadores Lógicos: E, OU, NÃO
 
 #### E (AND)
