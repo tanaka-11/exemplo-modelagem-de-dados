@@ -145,10 +145,11 @@ SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id NOT IN (3,5);
 ## UPDATE
 
 ```sql
-UPDATE fabricantes SET nomeFabricante = 'Asus do Brasil' WHERE id = 1; -- JAMAIS FAZER UM UPDATE SEM O WHERE!
+UPDATE fabricantes SET nomeFabricante = 'Asus do Brasil' WHERE id = 1; 
+-- JAMAIS FAZER UM UPDATE SEM O WHERE!
 
 UPDATE produtos SET preco = '6549,75' WHERE id = 4;
---- Utilizar o ID por ser único e não ter mais produtos iguais.
+-- Utilizar o ID por ser único e não ter mais produtos iguais.
 
 UPDATE produtos SET estoque = 20 WHERE fabricante_id = 3 OR fabricante_id = 5;
 
@@ -159,4 +160,7 @@ UPDATE produtos SET estoque = 20 WHERE fabricante_id IN (3,5)
 
 ```sql
 DELETE FROM fabricantes WHERE id = 1;
+
+-- A query abaixo NÃO FUNCIONA devido à restrição de chave estrangeira/relacionamento, ou seja, existem produtos associados ao fabricante 3.
+-- DELETE FROM fabricantes WHERE id = 3;
 ```
