@@ -93,6 +93,26 @@ SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id = 3;
 
 ---
 
+## Outras formas de utilizar o SELECT
+
+### Classificando (ORDER BY)
+
+```sql
+SELECT nomeProduto, preco FROM produtos ORDER BY nomeProduto;
+
+-- Ordem Crescente (ASC - Padrão)
+SELECT nomeProduto, preco FROM produtos ORDER BY preco;
+
+-- Ordem Decrescente (DESC)
+SELECT nomeProduto, preco FROM produtos ORDER BY preco DESC;
+
+-- Passar o ORDER BY após o WHERE.
+SELECT nomeProduto, preco FROM produtos WHERE estoque = 20 ORDER BY nomeProduto;
+
+```
+
+---
+
 ### Operadores Lógicos: E, OU, NÃO
 
 #### E (AND)
