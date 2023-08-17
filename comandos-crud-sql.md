@@ -93,10 +93,27 @@ SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id = 3;
 
 ---
 
-### Operadores Lógicos
+### Operadores Lógicos: E, OU, NÃO
+
+#### E (AND)
 
 ```sql
 SELECT nomeProduto, preco FROM produtos WHERE preco >= 2000 AND preco <= 6000;
 
 SELECT nomeProduto, preco FROM produtos WHERE preco > 5000 AND preco <= 6000;
+
+```
+
+#### OU (OR)
+
+```sql
+SELECT nomeProduto, preco FROM produtos WHERE preco > 5000 OR preco <= 3000;
+
+SELECT nomeProduto, descricao FROM produtos WHERE fabricante_id = 3 OR fabricante_id = 5;
+```
+
+#### NÃO (NOT)
+
+```sql
+SELECT nomeProduto, preco, descricao FROM produtos WHERE NOT fabricante_id = 8;
 ```
