@@ -274,5 +274,20 @@ ORDER BY Produtos, "Preço", Fabricantes;
 ### Exibindo fabricante, soma dos preços e o estoque dos produtos:
 
 ```sql
-SELECT fabricantes.nomeFabricante as Fabricante, SUM(produtos.preco) as Total, COUNT(produtos.fabricante_id) as "Qtd de Produtos" FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id GROUP BY Fabricante ORDER BY Total; 
+SELECT fabricantes.nomeFabricante as Fabricante, 
+SUM(produtos.preco) as Total, 
+COUNT(produtos.fabricante_id) as "Qtd de Produtos" FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id GROUP BY Fabricante ORDER BY Total; 
+```
+
+### Trazer a quantidade de produtos de cada fabricante
+
+```sql
+SELECT 
+fabricantes.nomeFabricante as Fabricantes, 
+COUNT(produtos.fabricante_id) as Produtos,
+SUM(produtos.estoque) as Estoque 
+FROM produtos INNER JOIN fabricantes 
+ON produtos.fabricante_id = fabricantes.id
+GROUP BY Fabricantes;
+-- Utilizar o GROUP BY para agrupar os resultados
 ```
