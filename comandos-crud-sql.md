@@ -242,6 +242,20 @@ SELECT fabricante_id, SUM(preco) FROM produtos GROUP BY fabricante_id;
 
 ```
 
+---
+
+## Consultas (Queries) em duas ou mais tabelas relacionadas chamada de JUNÇÃO(INNER JOIN)
+
+```sql
+-- SELECT tabela.coluna, tabela.coluna
+SELECT produtos.nomeProduto, fabricantes.nomeFabricante 
+
+-- INNER JOIN = Comando para juntar as tabelas SQL
+FROM produtos INNER JOIN fabricantes 
+
+-- ON = Comando para o critério da junção (INNER JOIN)
+ON produtos.fabricante_id = fabricantes.id;
+```
 
 
 
