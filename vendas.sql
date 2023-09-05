@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Ago-2023 às 16:59
+-- Tempo de geração: 17-Ago-2023 às 16:54
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -39,10 +39,8 @@ CREATE TABLE `fabricantes` (
 --
 
 INSERT INTO `fabricantes` (`id`, `nomeFabricante`) VALUES
-(1, 'Asus'),
 (2, 'Dell'),
 (3, 'Apple'),
-(4, 'LG'),
 (5, 'Samsung'),
 (6, 'Brastemp'),
 (7, 'Positivo'),
@@ -69,10 +67,12 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`id`, `nomeProduto`, `descricao`, `preco`, `estoque`, `fabricante_id`) VALUES
 (1, 'Ultrabook', 'Equipamento de última de geração cheio de recursos, com processador Intel Core I9.', 3500.00, 7, 2),
-(2, 'Tablet', 'Tablet com a versão 14 do sistema operacional Android, 128gb de memória, tela de 10 polegadas, 8gb de RAM', 1500.99, 5, 5),
+(2, 'Tablet', 'Tablet com a versão 14 do sistema operacional Android, 128gb de memória, tela de 10 polegadas, 8gb de RAM', 1500.99, 20, 2),
 (3, 'Geladeira', 'Refrigerador frost-free com acesso à internet', 5000.00, 12, 6),
-(4, 'Iphone 14 Pro Max', 'Smartphone Apple', 9999.99, 3, 3),
-(5, 'Ipad Mini', 'Tablet Apple', 4999.99, 5, 3);
+(4, 'Iphone 14 Pro Max', 'Smartphone Apple', 6549.00, 20, 3),
+(5, 'Ipad Mini', 'Tablet Apple', 4999.99, 20, 3),
+(6, 'Xbox Series S', 'Velocidade e desempenho de última geração.', 1997.00, 5, 8),
+(7, 'Notebook Motion', 'Intel Dual Core 4GB de RAM, 128GB SSD e Tela 14,1 polegadas.', 1213.65, 8, 7);
 
 --
 -- Índices para tabelas despejadas
@@ -105,7 +105,7 @@ ALTER TABLE `fabricantes`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restrições para despejos de tabelas
